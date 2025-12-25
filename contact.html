@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moon Light Restaurant</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <header class="w-100">
+        <!-- ================= ROW 1: NAV LINKS ================= -->
+        <nav
+          class="navbar navbar-expand-md navbar-light bg-light w-100 nav-top"
+        >
+          <div class="container-fluid nav-top-container">
+            <!-- Toggler for Nav Links -->
+            <button
+              class="navbar-toggler mx-auto"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#topNavLinks"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav Links -->
+            <div
+              class="collapse navbar-collapse justify-content-center"
+              id="topNavLinks"
+            >
+              <ul class="navbar-nav gap-3 text-center">
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./reservation.html">Reservation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./help.html">Help</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- ================= ROW 2: LOGO + SEARCH + ICONS ================= -->
+        <nav
+          class="navbar navbar-expand-md navbar-light bg-white w-100 border-top nav-bottom"
+        >
+          <div
+            class="container-fluid d-flex align-items-center justify-content-between nav-bottom-container"
+          >
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+              <h6 class="logo"><span>Book</span>MyTable</h6>
+              <p class="text-light">Never wait for your meal</p>
+            </a>
+
+            <!-- Search Bar -->
+            <form class="d-none d-md-flex align-items-center search-box w-50">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+              />
+              <button class="btn btn-primary" type="button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+
+            <!-- Icons -->
+            <div class="d-flex gap-3 header-icons">
+              <a href="./contact.html">
+                <i class="fa-solid fa-phone"></i>
+              </a>
+
+              <a href="./wishlist.html">
+                <i class="fa-solid fa-heart"></i>
+              </a>
+              <a href="./notification.html">
+                <i class="fa-solid fa-bell"></i>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </header>
+
+    <main class="blog">
+      <h4 class="text-center">Contact Us</h4>
+      <div
+        class="container-fluid d-flex justify-content-center align-items-center flex-column gap-4"
+      >
+        <form
+          action="/submit"
+          class="form bg-light text-dark p-4 rounded d-flex gap-4 mb-4"
+          style="width: 50%"
+        >
+          <div class="container">
+            <div class="row mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" required />
+            </div>
+            <div class="mb-3">
+              <label for="num" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="num" required />
+            </div>
+            <div class="mb-3">
+              <h4>Customer Support</h4>
+              <div class="row">
+                <i class="fa-solid fa-phone me-2"></i> Helpline Number : +91
+                9876543210
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" required />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+      <div
+        class="container-fluid d-flex flex-wrap blog-cont"
+        style="height: auto"
+      >
+        <div class="container-fluid blog-img">
+          <img
+            src="./images/contact.jpg"
+            alt=""
+            style="width: 100%"
+            height="500px"
+          />
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-light text-dark pt-5">
+      <div class="container">
+        <!-- ================= ROW 1: ALL LINKS ================= -->
+        <div class="row text-center gy-4 justify-content-around">
+          <div class="col-6 col-md-2">
+            <a class="navbar-brand" href="#">
+              <h6 class="logo"><span>Book</span>MyTable</h6>
+              <p class="text-dark">Never wait for your meal</p>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-2">
+            <h6 class="fw-bold">Company</h6>
+            <ul class="list-unstyled">
+              <li>About Us</li>
+              <li>Contact Us</li>
+              <li>Customer Reviews</li>
+              <li>Hunger Bear</li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2">
+            <h6 class="fw-bold">Policy Info</h6>
+            <ul class="list-unstyled">
+              <li>Terms & Conditions</li>
+              <li>Cookies Policy</li>
+              <li>Cancellation Policy</li>
+              <li>Privacy Policy</li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2">
+            <h6 class="fw-bold">Cities</h6>
+            <ul class="list-unstyled">
+              <li>Chennai</li>
+              <li>Bangalore</li>
+              <li>Hyderabad</li>
+              <li>Mumbai</li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2">
+            <h6 class="fw-bold">Help</h6>
+            <ul class="list-unstyled">
+              <li>Booking Restaurant</li>
+              <li>Hunger Bear</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="border-secondary my-4" />
+
+        <!-- ================= ROW 2: RESTAURANTS BY CITY ================= -->
+        <div class="row text-center justify-content-around gy-2 pb-3">
+          <div class="col-md-3">
+            <p>Hunger Bear in Chennai</p>
+            <p>Hunger Bear in Pune</p>
+          </div>
+
+          <div class="col-md-3">
+            <p>Hunger Bear in Bangalore</p>
+            <p>Hunger Bear in Hyderabad</p>
+          </div>
+
+          <div class="col-md-3">
+            <p>Hunger Bear in Kolkata</p>
+            <p>Hunger Bear in Mumbai</p>
+          </div>
+        </div>
+
+        <hr class="border-secondary my-4" />
+
+        <!-- ================= ROW 3: COPYRIGHT ================= -->
+
+        <!-- Row 3.1: Space Between -->
+        <div
+          class="row align-items-center bg-dark text-light justify-content-between gy-3"
+        >
+          <div class="col-md-6 text-center text-md-start">
+            <p class="mb-1 small">© 2025 Fit & Fab. All rights reserved.</p>
+            <p class="small">Terms & Conditions | Privacy Policy</p>
+          </div>
+
+          <div class="col-md-3 text-center text-md-start">
+            <h6 class="fw-bold">Contact</h6>
+            <p class="small mb-1">123 Saik Street, Chennai, TN</p>
+            <p class="small mb-1">+91 98765 43210</p>
+            <p class="small">fitfabsupport@email.com</p>
+          </div>
+        </div>
+
+        <!-- Row 3.2: Center Aligned -->
+        <div class="row bg-dark text-light pt-3">
+          <div class="col text-center">
+            <h6 class="fw-bold">Follow Us</h6>
+            <i class="fa-brands fa-facebook me-3"></i>
+            <i class="fa-brands fa-instagram me-3"></i>
+            <i class="fa-brands fa-linkedin me-3"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
